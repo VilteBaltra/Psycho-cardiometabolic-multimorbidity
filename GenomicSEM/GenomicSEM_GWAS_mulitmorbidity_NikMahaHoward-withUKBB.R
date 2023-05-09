@@ -57,7 +57,7 @@ b > .001
 F1 ~ SNP"
 
 # running in parallel using 11 cores and no GC as LD intercepts for all sumstats < 1
-result<-userGWAS(covstruc = LDSCoutput_UKBB, SNPs = m_sumstats, estimation = "DWLS", model = model, sub=c("F1~SNP"), cores = 42, toler = 1e-50, SNPSE = FALSE, parallel = T,GC="none",MPI=FALSE,smooth_check=FALSE)
+result<-userGWAS(covstruc = LDSCoutput_UKBB, SNPs = m_sumstats, estimation = "DWLS", model = model, sub=c("F1~SNP"), cores = 11, toler = 1e-50, SNPSE = FALSE, parallel = T,GC="none",MPI=FALSE,smooth_check=FALSE)
 # should be 6820149 rows 
 
 result <- as.data.frame(result)
