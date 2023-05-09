@@ -13,7 +13,7 @@ packageVersion("GenomicSEM")
 ## STEP 1: Munge the summary statistics 
 # CAD Nikpay: maf present, info present 
 # T2D Mahajan: maf not present, info not present
-# MD with UKBB: maf present, info present (treating FRQ_A_116209 as EAF) --> says no INFO column in output! check!
+# MD with UKBB: maf present, info present (treating FRQ_A_116209 as EAF) 
 
 munge(c("cad.add.160614.website.txt", "Mahajan.NatGenet2018b.T2D.European_mapped_CHR_ALL.txt", "PGC_UKB_23andMe_depression_genome-wide.txt.gz"), "w_hm3.snplist",trait.names=c("CAD_Nik","T2D_M", "MD_UKBB"), c(184305, 898130, 807553),info.filter = 0.9, maf.filter = 0.01) 
 # CAD: maf present, info present 
