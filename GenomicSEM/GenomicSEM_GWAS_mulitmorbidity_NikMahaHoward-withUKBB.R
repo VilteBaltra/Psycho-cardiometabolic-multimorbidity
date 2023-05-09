@@ -22,7 +22,7 @@ munge(c("cad.add.160614.website.txt", "Mahajan.NatGenet2018b.T2D.European_mapped
 
 traits <- c("CAD_Nik.sumstats.gz", "T2D_M.sumstats.gz", "MD_UKBB.sumstats.gz")
 sample.prev <- c(.33,.09,.44)
-population.prev <- c(.07,.10,.15)  # depression prevalence taken from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3131101/ -should it be lifetime prevalence or point prevalence?
+population.prev <- c(.07,.10,.15)  # depression prevalence taken from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3131101/ 
 ld <- "eur_w_ld_chr/"
 wld <- "eur_w_ld_chr/"
 trait.names<-c("CAD_Nik", "T2D_M", "MD_UKBB")
